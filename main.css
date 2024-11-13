@@ -1,0 +1,130 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container geral */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom right, #ffbb00, #5c3f9b);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero__countdown {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #fffb00;
+}
+
+/* Infos Section */
+.infos_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background: linear-gradient(to bottom right, #9d47ff, #ff7300);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.infos_bar__content {
+    flex: 1 1 50%;
+    padding-right: 20px;
+}
+
+.infos_bar__infos {
+    list-style: none;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.infos_bar__infos li {
+    margin-bottom: 10px;
+}
+
+.infos_bar__content p {
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.infos_bar__image {
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+.infos_bar__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero__countdown {
+        font-size: 1rem;
+    }
+
+    .infos_bar {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .infos_bar__content, .infos_bar__image {
+        flex: 1 1 100%;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__title {
+        font-size: 1.8rem;
+    }
+
+    .hero__countdown {
+        font-size: 0.9rem;
+    }
+
+    .infos_bar__content {
+        padding: 0;
+    }
+}
